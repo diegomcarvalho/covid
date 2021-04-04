@@ -15,7 +15,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
     f.close()
 
-with open("socnet/version.h") as f:
+with open("src/version.h") as f:
     line = f.read()
     __version__ = line.split('"')[1]
     f.close()
@@ -40,7 +40,7 @@ class get_pybind_include(object):
 ext_modules = [
     Pybind11Extension(
         __package_name__,
-        sorted(glob("socnet/*.cc")),
+        sorted(glob("src/*.cc")),
         include_dirs=[
             # Path to pybind11 headers
             get_pybind_include(),
