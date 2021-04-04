@@ -1,4 +1,4 @@
-MODULE = calculate$(shell python3-config --extension-suffix)
+MODULE = socnet$(shell python3-config --extension-suffix)
 VERSION = $(shell git describe --tags --always --long --dirty)
 INLCUDES = $(shell python3 -m pybind11 --includes)
 OBS = calculate.o population.o pybindmodule.o

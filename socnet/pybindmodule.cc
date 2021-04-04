@@ -21,7 +21,7 @@ calculate_infection(const int duration,
                     const double vaccinated_share = 0.0,
                     const double vaccine_efficacy = 0.0);
 
-PYBIND11_MODULE(calculate, m)
+PYBIND11_MODULE(socnet, m)
 {
     m.doc() =
       "calculate_infection implemented in C++ - v3.0"; // optional module
