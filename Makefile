@@ -1,7 +1,6 @@
-all: socnet
-	python3 setup.py build
-	cd socnet; make
+all: src
+	cd src; make
 
 clean:
 	rm -fr build dist socnet.egg-info
-	cd socnet; make clean
+	cd src; make clean
